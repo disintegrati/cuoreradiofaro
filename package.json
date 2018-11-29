@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aplay": "^1.2.0",
+    "python-shell": "^1.0.6",
     "timesync": "^1.0.3"
   }
 }
