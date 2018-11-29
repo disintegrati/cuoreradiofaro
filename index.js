@@ -31,8 +31,6 @@ var ts = timesync.create({
 
 	function go(){
 		child = exec("python /home/pi/Desktop/cuoreradiofaro/pulsa.py", function (error, stdout, stderr) {
- // sys.print('stdout: ' + stdout);
-//  sys.print('stderr: ' + stderr);
 counter = 0;
   if (error !== null) {
     console.log('exec error: ' + error);
