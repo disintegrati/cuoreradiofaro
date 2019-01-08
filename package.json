@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "python-shell": "^1.0.6",
+    "pigpio": "^1.2.0",
     "timesync": "^1.0.3"
   }
 }
