@@ -26,10 +26,16 @@ var ts = timesync.create({
 	dutyCycle = 0;
 	pulsazione = 0;
 	main = setInterval(pulsa, 24);
+
+  /*******************
+  Se l'ora attuale è tra le otto di mattina e le 20 di sera il led deve essere spento
+  Altrimenti il led deve essere acceso
+  potete cambiare i valori 8 e 20 nell'if sottostante per verificare la condizione
+  *******************/
   if (checkSwitch >= 8 && checkSwitch <= 20) {
-    sw.pwmWrite(255);
-  } else {
     sw.pwmWrite(0);
+  } else {
+    sw.pwmWrite(255);
   }
 
 	} else{
