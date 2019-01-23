@@ -3,6 +3,8 @@ const pigpio = require('pigpio');
 const Gpio = pigpio.Gpio
 const timesync =  require ('timesync');
 const led = new Gpio(17, {mode: Gpio.OUTPUT});
+const sw = new Gpio(27, {mode: Gpio.OUTPUT});
+let checkSwitch = new Date().getHours();
 let dutyCycle = 0;
 let increment = 0;
 let pulsazione = 0;
@@ -24,6 +26,12 @@ var ts = timesync.create({
 	dutyCycle = 0;
 	pulsazione = 0;
 	main = setInterval(pulsa, 24);
+  if (checkSwitch >= 8 && checkSwitch <= 20) {
+    sw.pwmWrite(255);
+  } else {
+    sw.pwmWrite(0);
+  }
+
 	} else{
       // console.log('non batto');
     }
