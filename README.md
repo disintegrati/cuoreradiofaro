@@ -10,7 +10,7 @@ iniziamo col digitare sul terminale
 ```
 uname -m
 ```
-questo servirà a capire che versione di node sarà supportata dal nostro raspi. Adesso scarica la versione giusta da questo link [questo link](https://nodejs.org/en/download/).
+questo servirà a capire che versione di node sarà supportata dal nostro raspi. Adesso scarica la versione giusta da [questo link](https://nodejs.org/en/download/).
 
 Adesso, da terminale, inseriamo wget prima del link preso dal sito precedente 
 _In questo modo scaricheremo l'archivio sul nostro computerino_
