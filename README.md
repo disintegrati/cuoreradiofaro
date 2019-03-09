@@ -1,7 +1,7 @@
 # cuoreradiofaro
 
 Installa raspbian sul tuo raspberry nella versione lite.
-> La Desktop, in questo caso, non sarà molto utile
+_La Desktop, in questo caso, non sarà molto utile_
 
 ## Scarichiamo e installiamo node sul raspi
 
@@ -13,7 +13,7 @@ uname -m
 questo servirà a capire che versione di node sarà supportata dal nostro raspi. Adesso scarica la versione giusta da questo link [questo link](https://nodejs.org/en/download/).
 
 Adesso, da terminale, inseriamo wget prima del link preso dal sito precedente 
-> In questo modo scaricheremo l'archivio sul nostro computerino
+_In questo modo scaricheremo l'archivio sul nostro computerino_
 
 Estraiamo l'archivio digitando
 
@@ -21,15 +21,15 @@ Estraiamo l'archivio digitando
 tar -xzf nodexxx.tar.gz
 ```
 
-_Nel caso in cui il pacchetto sia un .gz_
+>Nel caso in cui il pacchetto sia un .gz
 
 ```
 tar xvf nodexxx.tar.xz
 ```
 
-_Nel caso in cui il pacchetto sia un .xz_
+>Nel caso in cui il pacchetto sia un .xz
 
-> "SUGGERIMENTO: quando stiamo per scrivere un nome di un file presente nel sistema clicca su TAB per completare automaticamente il nome del suddetto"
+_"SUGGERIMENTO: quando stiamo per scrivere un nome di un file presente nel sistema clicca su TAB per completare automaticamente il nome del suddetto"_
 
 Adesso copiamo node in usr/local, uscendo prima dalla cartella
 
